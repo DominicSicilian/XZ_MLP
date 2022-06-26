@@ -45,5 +45,5 @@ df = sc.fit_transform(df)
 y_pred = classifier.predict(df)
 
 # Get the corresponding probabilities
-y_proba = classifier.predict_proba(df)[:,1]
+y_proba = classifier.predict_proba(df)
 ```

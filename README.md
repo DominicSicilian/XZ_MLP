@@ -20,15 +20,23 @@ To load and apply the model, you will need [joblib](https://joblib.readthedocs.i
 
 ## Loading the model
 
+Use ```joblib``` to load the fitted classifer from ```fitted_FINAL_MLP.sav```.
+
 ```python
 classifier = joblib.load("fitted_FINAL_MLP.sav")
 ```
 
 ## Preparing your data
 
+Load a dataset of XZ-analyzed sources containing the relevant features, as well as the XZ-computed redshifts. It is most convenient to use a CSV-formatted file, and to read it in as a ```pandas``` DataFrame (shown in the example below). The names of the features should be renamed to match the following:
+
+```python
+feature_list = ["XZ", "XZ_NH", "sigma_z", "sigma_nh", "CSTATv", "IG", "counts"]
+```
+
 ```python
 # Load your csv as a DataFrame
-df = pd.read_csv(your_data_csv_filename)
+df = pd.read_csv(your_data_csv_filename_string)
 
 # Rename the columns
 df = df.rename(columns={})

@@ -4,6 +4,12 @@ In this repository, you can find the fitted Multi-Layer Perceptron (MLP) neural 
 
 ## Dependencies
 
+To load and apply the model, you will need [joblib](https://joblib.readthedocs.io/en/latest/), [scikit-learn](https://scikit-learn.org/stable/index.html), and [pandas](https://pandas.pydata.org/). Install with
+
+ ```python
+ $ pip install joblib scikit-learn pandas
+ ```
+
 ## Loading the model
 
 ## Preparing your data

@@ -14,7 +14,7 @@ To load and apply the model, you will need [joblib](https://joblib.readthedocs.i
  
  ```python
  import joblib
- import pandas
+ import pandas as pd
  from sklearn.preprocessing import StandardScaler
  ```
 

@@ -41,5 +41,9 @@ df = sc.fit_transform(df)
 ## Applying the model to your data
 
 ```python
+# Get the predicted class for each source
 y_pred = classifier.predict(df)
+
+# Get the corresponding probabilities
+y_proba = classifier.predict_proba(df)[:,1]
 ```

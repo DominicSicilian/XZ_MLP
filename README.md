@@ -52,7 +52,7 @@ df = sc.fit_transform(df)
 
 ## Applying the model to your data
 
-To predict the classes for each source, call the classifier's ```predict``` method (which will return ```1``` for a good XZ redshift estimate and a ```0``` for a poor estimate). To obtain the model's estimated probabilities associated with each class, call the ```predict_proba``` method.
+To predict the classes for each source, call the classifier's ```predict``` method (which will return ```1``` for a good XZ redshift estimate and ```0``` for a poor estimate). To obtain the model's estimated probabilities associated with each class, call the ```predict_proba``` method.
 
 ```python
 # Get the predicted class for each source

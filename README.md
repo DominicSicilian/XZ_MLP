@@ -20,7 +20,26 @@ To load and apply the model, you will need [joblib](https://joblib.readthedocs.i
 
 ## Loading the model
 
+```python
+classifier = joblib.load("fitted_FINAL_MLP.sav")
+```
 
 ## Preparing your data
 
+```python
+# Load your csv as a DataFrame
+df = pd.read_csv(your_data_csv_filename)
+
+# Rename the columns
+df = df.rename(columns={})
+
+# Apply the scikit-learn standard scaler
+sc = StandardScaler()
+df = sc.fit_transform(df)
+```
+
 ## Applying the model to your data
+
+```python
+y_pred = classifier.predict(df)
+```

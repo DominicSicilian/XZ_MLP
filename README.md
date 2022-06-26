@@ -33,7 +33,7 @@ df = pd.read_csv(your_data_csv_filename)
 # Rename the columns
 df = df.rename(columns={})
 
-# Apply the scikit-learn standard scaler
+# Rescale the values
 sc = StandardScaler()
 df = sc.fit_transform(df)
 ```
